@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+    image: ${IMAGE_NAME}:${IMAGE_TAG}
+    container_name: ${APP_NAME}
+    restart: unless-stopped
+    ports:
+      - '${APP_PORT}:${APP_PORT}'
+    env_file: .env
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - MIDWAY_SERVER_ENV=${MIDWAY_SERVER_ENV}
