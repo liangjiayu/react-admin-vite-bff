@@ -8,7 +8,7 @@ export class HomeController {
 
   @Get('*')
   async home(): Promise<string> {
-    const result = await this.httpService.get('http://cdn.liangjiayu.top/prod/index.html');
+    const result = await this.httpService.get('http://cdn.liangjiayu.top/react-admin-vite/prod/index.html');
 
     return result.data;
   }

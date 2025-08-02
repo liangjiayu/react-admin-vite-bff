@@ -4,7 +4,7 @@ export default {
   // use for cookie sign key, should change to your own and keep security
   keys: '1740806677164_4665',
   koa: {
-    port: process.env.APP_PORT || 7700,
+    port: process.env.APP_PORT || 7400,
   },
 
   httpProxy: {
