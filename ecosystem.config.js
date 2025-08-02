@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'fast-tiny-midway',
+      name: 'react-admin-vite-bff',
       script: './bootstrap.js',
       autorestart: true,
       exec_mode: 'cluster',
