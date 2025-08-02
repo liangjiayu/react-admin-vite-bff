@@ -1,9 +1,15 @@
-import { Controller, Get } from '@midwayjs/core';
+import { HttpService } from '@midwayjs/axios';
+import { Controller, Get, Inject } from '@midwayjs/core';
 
 @Controller('/')
 export class HomeController {
-  @Get('/')
+  @Inject()
+  httpService: HttpService;
+
+  @Get('*')
   async home(): Promise<string> {
-    return 'Hello Midwayjs!';
+    const result = await this.httpService.get('http://cdn.liangjiayu.top/prod/index.html');
+
+    return result.data;
   }
 }

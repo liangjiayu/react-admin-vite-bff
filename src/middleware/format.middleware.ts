@@ -1,7 +1,7 @@
-import { BaseResult } from '@/common/response/base-result';
-import { RESPONSE_SUCCESS_CODE, RESPONSE_SUCCESS_MESSAGE } from '@/constants';
 import { IMiddleware, Middleware } from '@midwayjs/core';
 import { Context, NextFunction } from '@midwayjs/koa';
+import { BaseResult } from '@/common/response/base-result';
+import { RESPONSE_SUCCESS_CODE, RESPONSE_SUCCESS_MESSAGE } from '@/constants';
 
 /**
  * 统一响应结构中间件

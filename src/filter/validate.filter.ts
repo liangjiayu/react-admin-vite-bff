@@ -1,7 +1,7 @@
-import { BaseResult } from '@/common/response/base-result';
-import { ErrorCodeEnum } from '@/constants/error-code';
 import { Catch } from '@midwayjs/core';
 import { MidwayValidationError } from '@midwayjs/validate';
+import { BaseResult } from '@/common/response/base-result';
+import { ErrorCodeEnum } from '@/constants/error-code';
 
 /**
  * 参数校验过滤器

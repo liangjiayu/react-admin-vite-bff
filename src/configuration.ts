@@ -1,4 +1,5 @@
 import { join } from 'node:path';
+import * as axios from '@midwayjs/axios';
 import { App, Configuration, ILogger, Logger } from '@midwayjs/core';
 import * as info from '@midwayjs/info';
 import * as koa from '@midwayjs/koa';
@@ -22,6 +23,7 @@ if (process.env.NODE_ENV === 'production') {
     validate,
     orm,
     swagger,
+    axios,
     {
       component: info,
       enabledEnvironment: ['local'],

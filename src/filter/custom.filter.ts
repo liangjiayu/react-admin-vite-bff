@@ -1,7 +1,7 @@
+import { Catch } from '@midwayjs/core';
 import { BaseResult } from '@/common/response/base-result';
 import { CustomError } from '@/common/response/custom-error';
 import { ErrorCodeEnum } from '@/constants/error-code';
-import { Catch } from '@midwayjs/core';
 
 /**
  * 自定义错误过滤器
