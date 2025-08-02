@@ -1,5 +1,5 @@
-import { CustomErrorEnum } from '@/constants/error-code';
 import { MidwayError } from '@midwayjs/core';
+import { CustomErrorEnum } from '@/constants/error-code';
 
 /**
  * 自定义错误（业务错误）

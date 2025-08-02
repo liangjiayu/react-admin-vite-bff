@@ -1,16 +1,12 @@
 import { join } from 'node:path';
 import * as axios from '@midwayjs/axios';
 import { App, Configuration, ILogger, Logger } from '@midwayjs/core';
+import * as proxy from '@midwayjs/http-proxy';
 import * as info from '@midwayjs/info';
 import * as koa from '@midwayjs/koa';
-import * as swagger from '@midwayjs/swagger';
-import * as orm from '@midwayjs/typeorm';
-import * as validate from '@midwayjs/validate';
 import * as dotenv from 'dotenv';
 import { CustomErrorFilter } from './filter/custom.filter';
 import { DefaultErrorFilter } from './filter/default.filter';
-import { ValidateErrorFilter } from './filter/validate.filter';
-import { FormatMiddleware } from './middleware/format.middleware';
 
 // 生产环境加载 .env 配置
 if (process.env.NODE_ENV === 'production') {
@@ -20,10 +16,8 @@ if (process.env.NODE_ENV === 'production') {
 @Configuration({
   imports: [
     koa,
-    validate,
-    orm,
-    swagger,
     axios,
+    proxy,
     {
       component: info,
       enabledEnvironment: ['local'],
@@ -46,10 +40,9 @@ export class MainConfiguration {
     }
 
     // add middleware
-    this.app.useMiddleware([FormatMiddleware]);
+    // this.app.useMiddleware([]);
     // add filter
     this.app.useFilter([
-      ValidateErrorFilter,
       CustomErrorFilter,
       DefaultErrorFilter,
     ]);
