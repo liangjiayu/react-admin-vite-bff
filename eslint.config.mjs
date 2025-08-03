@@ -18,7 +18,6 @@ export default antfu({
   rules: {
     'no-console': 'warn',
     'style/brace-style': 'off',
-    // 'unused-imports/no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'error',
     'ts/consistent-type-imports': 'off',
     'node/prefer-global/process': 'off',

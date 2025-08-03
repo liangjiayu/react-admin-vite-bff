@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@10.6.2",
-  "description": "一个基于 MidwayJS 的轻量级全栈快速开发模板",
+  "description": "中后台系统的bff服务，包括接口代理、系统部署等功能",
   "author": "anonymous",
   "license": "MIT",
   "repository": {
@@ -22,8 +22,6 @@
     "lint:fix": "eslint --fix",
     "start": "NODE_ENV=production node ./bootstrap.js",
     "start:server": "pm2-runtime start ecosystem.config.js",
-    "pm2:start": "pm2 start ecosystem.config.js",
-    "pm2:stop": "pm2 delete ecosystem.config.js && pm2 cleardump",
     "docker:build": "docker compose build",
     "docker:up": "docker compose --env-file .env up -d",
     "docker:down": "docker compose down"
@@ -48,8 +46,6 @@
     "lint-staged": "^15.4.3",
     "mwts": "^1.3.0",
     "mwtsc": "^1.4.0",
-    "plop": "^4.0.1",
-    "ts-jest": "^29.0.3",
     "typescript": "^5.0.0"
   },
   "lint-staged": {
