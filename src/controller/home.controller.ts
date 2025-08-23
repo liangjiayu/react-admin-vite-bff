@@ -15,7 +15,7 @@ export class HomeController {
     /**
      * 可根据实际情况获取静态资源，如判断域名
      */
-    const cdnUrl = 'http://cdn.liangjiayu.top/react-admin-vite/prod/index.html';
+    const cdnUrl = 'http://cdn.liangjiayu.cn/react-admin-vite/prod/index.html';
     const response = await this.httpService.get(cdnUrl, {
       responseType: 'text',
     });
