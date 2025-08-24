@@ -9,6 +9,6 @@ export default {
 
   httpProxy: {
     match: /\/api\//,
-    host: 'http://fast-api.liangjiayu.cn',
+    host: 'https://fast-api.liangjiayu.cn',
   },
 } as MidwayConfig;
