@@ -2,9 +2,8 @@
   "name": "react-admin-vite-bff",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@10.6.2",
-  "description": "中后台系统的bff服务，包括接口代理、系统部署等功能",
-  "author": "anonymous",
+  "packageManager": "pnpm@10.14.0",
+  "description": "基于 midwayjs 框架的BFF服务",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -5,8 +5,8 @@
 ## 快速开始
 
 ```bash
-# 克隆项目
-git clone <repository-url>
+# 创建项目
+npx tiged liangjiayu/react-admin-vite-bff react-admin-vite-bff
 
 # 进入项目目录
 cd react-admin-vite-bff
