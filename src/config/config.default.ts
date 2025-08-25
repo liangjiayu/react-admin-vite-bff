@@ -7,6 +7,10 @@ export default {
     port: process.env.APP_PORT || 7310,
   },
 
+  /**
+   * HTTP 代理
+   * @see https://midwayjs.org/docs/extensions/http-proxy
+   */
   httpProxy: {
     match: /\/api\//,
     host: 'https://fast-api.liangjiayu.cn',
